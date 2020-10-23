@@ -247,6 +247,7 @@ p {
             }
         }
         &__text {
+            padding: 0 35px;
             font-size: 28px;
             font-family: 'FuturaPT';
             color: #000000;
@@ -452,6 +453,13 @@ p {
         }
         &__img {
             height: 400px;
+        }
+    }
+    .subtitle {
+        &-intro {
+            &:first-child {
+                width: 330px;
+            }
         }
     }
 }
@@ -710,6 +718,16 @@ p {
         }
     }
 }
+@media (max-width: 450px) {
+    .subtitle {
+        &-intro {
+            &:first-child {
+                width: auto;
+                padding: 0 86px;
+            }
+        }
+    }
+}
 @media (max-width: 414px) {
     .title {
         &-intro {
@@ -731,6 +749,12 @@ p {
         }
     }
     .subtitle {
+            &-intro {
+                &:first-child {
+                    width: auto;
+                    padding: 0 70px;
+                }
+            }
         &-autor {
             font-size: 24px;
         }
@@ -799,11 +823,20 @@ p {
         }
     }
     .subtitle {
+        &-intro {
+            &:first-child {
+                width: auto;
+                padding: 0 50px;
+            }
+        }
         &-autor {
             font-size: 20px;
         }
     }
     .autor {
+        &__inner {
+            padding: 10px;
+        }
         &__text {
             margin-top: 30px;
         }
@@ -846,6 +879,15 @@ p {
         &-buy {
             font-size: 16px;
             padding: 0 5px;
+        }
+        &-intro {
+            &:first-child {
+                width: auto;
+                padding: 0 25px;
+            }
+        }
+        &-autor {
+            font-size: 20px;
         }
     }
     .button {
