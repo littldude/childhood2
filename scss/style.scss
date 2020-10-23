@@ -523,6 +523,7 @@ p {
                 flex-direction: row;
                 align-items: flex-start;
                 &__text {
+                    padding: 0;
                     width: 500px;
                     text-align: left;
                 }
