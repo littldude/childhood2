@@ -88,6 +88,7 @@ p {
   font-size: 48px;
 }
 .title-buy {
+  text-align: center;
   font-size: 56px;
   margin-bottom: 50px;
 }
@@ -132,7 +133,7 @@ p {
 }
 .subtitle-buy {
   font-size: 28px;
-  width: 700px;
+  text-align: center;
 }
 .subtitle-footer {
   font-size: 24px;
