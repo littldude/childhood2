@@ -195,8 +195,20 @@ p {
         background-position-y: -113px;
         box-shadow: 0px 13px 7px -3px rgba(189,189,189,0.47);
         &--text {
+            position: relative;
             margin-left: 7%;
         }
+    }
+    &__sale {
+        display: block;
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        top: 41%;
+        right: 38%;
+        transform: rotate(-20deg);
+        z-index: 100;
+        
     }
     &-links {
         margin:100px 0 0 45px;
@@ -476,6 +488,13 @@ p {
                 margin-left: 0;
             }
         }
+        &__sale {
+            top: 73px;
+            right: 0px;
+            width: 125px;
+            height: 125px;
+            transform: rotate(20deg);
+        }
         &__img {
             position: static;
         }
@@ -673,6 +692,12 @@ p {
         &__img {
             height: 300px;
         }
+        &__sale {
+            top: 30px;
+            right: 20px;
+            width: 90px;
+            height: 90px;
+        }
     }
     .about {
         &__block {
@@ -719,6 +744,16 @@ p {
         }
     }
 }
+@media (max-width: 475px) {
+    .intro {
+        &__sale {
+            // top: 0;
+            right: 0;
+            // width: 75px;
+            // height: 75px;
+        }
+    }
+}
 @media (max-width: 450px) {
     .subtitle {
         &-intro {
@@ -730,6 +765,14 @@ p {
     }
 }
 @media (max-width: 414px) {
+    .intro {
+        &__sale {
+            top: 0;
+            right: 6px;
+            width: 75px;
+            height: 75px;
+        }
+    }
     .title {
         &-intro {
             padding: 20px;
@@ -811,6 +854,13 @@ p {
     }
 }
 @media (max-width: 375px) {
+    .intro {
+        &__sale {
+            top: 20px;
+            width: 60px;
+            height: 60px;
+        }
+    }
     .title {
         &-intro {
             font-size: 40px;
